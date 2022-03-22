@@ -6,7 +6,7 @@ public class Cat {
     private String text;
     private String type;
     private String user;
-    private String upvotes;
+    private Integer upvotes;
 
 
     public void setId(String id) {
@@ -25,7 +25,7 @@ public class Cat {
         this.user = user;
     }
 
-    public void setUpvotes(String upvotes) {
+    public void setUpvotes(Integer upvotes) {
         this.upvotes = upvotes;
     }
 
@@ -46,7 +46,7 @@ public class Cat {
         return user;
     }
 
-    public String getUpvotes() {
+    public Integer getUpvotes() {
         return upvotes;
     }
 
@@ -56,7 +56,7 @@ public class Cat {
             @JsonProperty("text") String text,
             @JsonProperty("type") String type,
             @JsonProperty("user") String user,
-            @JsonProperty("upvotes") String upvotes
+            @JsonProperty("upvotes") Integer upvotes
     ) {
         this.id = id;
         this.text = text;
